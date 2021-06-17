@@ -97,9 +97,8 @@ namespace FinanceProject.Controllers
 
             if (accountsPayable.SupplierID != resultSuppller.Id)
             {
-                Content("Não é possivel alterar o fornecedor!");
-            }
-
+               return Content("Não é possivel alterar o fornecedor!");
+            }           
             _context.Entry(accountsPayable).State = EntityState.Modified;
 
             try

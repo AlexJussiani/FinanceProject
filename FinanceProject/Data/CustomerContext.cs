@@ -1,12 +1,13 @@
 ﻿using FinanceProject.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+
 namespace FinanceProject.Data
 {
     public class CustomerContext : DbContext
     {
         public CustomerContext(DbContextOptions<CustomerContext> options) : base(options)
         {
-
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<AccountsMovimentations> AccountsMovimentations { get; set; }
