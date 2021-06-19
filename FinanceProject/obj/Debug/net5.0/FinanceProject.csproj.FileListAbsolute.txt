@@ -356,3 +356,5 @@ C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\obj\Debug\net5.
 C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\obj\Debug\net5.0\ref\FinanceProject.dll
 C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\obj\Debug\net5.0\FinanceProject.pdb
 C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\obj\Debug\net5.0\FinanceProject.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\Lenovo\Documents\PROJETOS\FinanceProject\FinanceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

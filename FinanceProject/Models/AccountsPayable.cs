@@ -13,7 +13,7 @@ namespace FinanceProject.Models
         public DateTime Date { get; set; }
         public DateTime ExpirationDate { get; set; }
         [Required]
-        public Customer Supplier { get; set; }
+        public virtual Customer Supplier { get; set; }
         public int SupplierID { get; set; }
         public decimal TotalValue { get; set; }
         public string Status { get; set; }

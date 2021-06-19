@@ -21,7 +21,7 @@ namespace FinanceProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CustomerContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("FinanceProject")));
+            services.AddDbContext<CustomerContext>(opt => opt.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("FinanceProject")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

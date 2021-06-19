@@ -92,13 +92,12 @@ namespace FinanceProject.Controllers
                 return BadRequest();
             }
 
-            var resultAccountsPayable = _context.AccountsPayables.ToList().Where(e => e.Id == id).First();
-            var resultSuppller = _context.Customers.ToList().Where(e => e.Id == resultAccountsPayable.SupplierID).First();
+            var resultAccountsPayable = await _context.AccountsPayables.FindAsync(id);
 
-            if (accountsPayable.SupplierID != resultSuppller.Id)
-            {
-               return Content("Não é possivel alterar o fornecedor!");
-            }           
+            //if (accountsPayable.Supplier.Id != resultAccountsPayable.Supplier.Id)
+            //{
+            //   return Content("Não é possivel alterar o fornecedor!");
+            //}           
             _context.Entry(accountsPayable).State = EntityState.Modified;
 
             try
